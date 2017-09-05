@@ -1,0 +1,13 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Vendor extends Model
+{
+    public function diamonds()
+    {
+    	$this->hasMany(Diamond::class);
+    }
+}
